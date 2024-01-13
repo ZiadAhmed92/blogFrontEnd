@@ -11,8 +11,8 @@ const Home = () => {
     const [id , setId] = useState('');
 
     let AllBlogs = async () => {
-        let { data } = await axios.get("http://localhost:3000/blogs");
-        // let { data } = await axios.get("http://localhost:3000/blogs", {
+        let { data } = await axios.get("https://blog-facebook1.onrender.com/blogs");
+        // let { data } = await axios.get("https://blog-facebook1.onrender.com/blogs", {
         //     headers: {
         //         "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiemlhZCIsInJvbGUiOiJ1c2VyIiwidXNlcklkIjoiNjVhMDAzYmQ2NzU5MTE3ZTMzNWNkOTJiIiwiaWF0IjoxNzA0OTg2NjQwfQ.Aij7mSCjsdrGnlRxtX7KLwdDwtD7H8hyC0OcLI2IhWc"
         //     }
@@ -21,7 +21,7 @@ const Home = () => {
     }
     let DeleteBlog = async (id) => {
         // eslint-disable-next-line no-unused-vars
-        let { data } = await axios.delete(`http://localhost:3000/delete/${id}`);
+        let { data } = await axios.delete(`https://blog-facebook1.onrender.com/delete/${id}`);
         
     }
     useEffect(() => {

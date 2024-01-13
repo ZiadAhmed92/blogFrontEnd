@@ -27,7 +27,7 @@ const Update = () => {
 
     }
     async function sendArticle() {
-        let { data } = await axios.put(`http://localhost:3000/blogs`, article);
+        let { data } = await axios.put(`https://blog-facebook1.onrender.com/blogs`, article);
         console.log(data)
         if (data.message === "success") {
             Navigate("/home")

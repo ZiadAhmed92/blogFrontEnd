@@ -21,7 +21,7 @@ const Login = ({ dataUser }) => {
 
   }
   async function sendUserData() {
-    let { data } = await axios.post(`http://localhost:3000/signIn`, user);
+    let { data } = await axios.post(`https://blog-facebook1.onrender.com/signIn`, user);
     console.log(data)
     if (data.message === "login") {
       localStorage.setItem('userToken', data.token)

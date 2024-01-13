@@ -22,7 +22,7 @@ const Register = () => {
 
     }
     async function sendUserData() {
-        let { data } = await axios.post(`http://localhost:3000/signUp`, user);
+        let { data } = await axios.post(`https://blog-facebook1.onrender.com/signUp`, user);
         console.log(data)
         if (data.message === "success") {
             
