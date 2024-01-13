@@ -54,7 +54,7 @@ const AddBlog = () => {
   function validateLoginForm() {
     let schema = joi.object({
       title: joi.string().min(3).max(10).required(),
-      desc: joi.string().min(3).max(10).required(),
+      desc: joi.string().min(3).max(150).required(),
       createdBy: joi.string().min(3).max(100),
 
     })
