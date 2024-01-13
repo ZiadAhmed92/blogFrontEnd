@@ -1,0 +1,15 @@
+.blog{
+    box-shadow:  1px 1px 20px rgb(168, 165, 165);
+}
+.title{
+    border-bottom:1px solid rgba(0, 0, 0, 0.181); 
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+
+}
+.date{
+    border-top: 1px solid rgba(0, 0, 0, 0.181); 
+    text-align: center;
+    color: rgba(0, 0, 0, 0.544);
+}
